@@ -1,0 +1,10 @@
+#import array as arr
+import logging
+boxes = [0, 1, 2, 3, 4, 5]
+
+def logFirstTwoBoxes(arr):
+    print(arr[0])
+    print(arr[1])
+    
+    
+logFirstTwoBoxes(boxes)  # O(1) aka Constant Time
