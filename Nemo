@@ -1,0 +1,29 @@
+import array as arr
+import timeit as time
+
+nemo = ['Nemo']
+everyone = ['Dory', 'Bruce', 'Marlin', 'Nemo', 'Gill',
+            'Bloat', 'Nigel', 'Squirt', 'Darla', 'Hank']
+large = ['Nemo'] * 100 
+
+
+def findNemo(arr):
+    t0 = time.timeit()
+    x = 0
+    i = 0
+    while i < len(arr):
+        for x in arr:
+            if x == 'Nemo':
+                print('Found Nemo!')
+            
+            if x != len(arr) - 1:
+                i += 1
+                print(i)
+                
+            
+        t1 = time.timeit()
+        y = 'Call to find Nemo took ' + str(t1) + ' milliseconds.'
+        print(y)
+        
+        
+findNemo(everyone)
