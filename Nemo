@@ -26,4 +26,4 @@ def findNemo(arr):
         print(y)
         
         
-findNemo(everyone)
+findNemo(everyone)  # O(n) aka "Big O of n" aka Linear Time
