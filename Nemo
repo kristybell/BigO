@@ -15,6 +15,7 @@ def findNemo(arr):
         for x in arr:
             if x == 'Nemo':
                 print('Found Nemo!')
+                break
             
             if x != len(arr) - 1:
                 i += 1
