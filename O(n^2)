@@ -1,0 +1,18 @@
+# Print all pairs of array
+
+boxes = ['a', 'b', 'c','d', 'e']
+
+def logAllPairsOfArray(array):
+    i = 0
+    
+    
+    while i < len(array):
+        j = 0
+        
+        while j < len(array):
+            print(array[i] + "," + array[j])
+            j+=1
+        
+        i+=1
+        
+logAllPairsOfArray(boxes)
