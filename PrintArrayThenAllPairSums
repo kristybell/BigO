@@ -1,0 +1,20 @@
+# Print out an array of numbers while adding to the next indexed entry
+
+num = [1, 2, 3, 4, 5, 6, 7]
+
+def printAllNumbersThenAllPairSums(numbers):
+    x = 0
+    i = 0
+    
+    print('These are numbers: ')
+    print(numbers)
+    print('These are their sums: ')
+    
+    while i < len(numbers) -1 :
+        firstNumber = numbers[i]
+        secondNumber = numbers[i+1]
+        print(firstNumber + secondNumber)
+            
+        i+=1
+        
+printAllNumbersThenAllPairSums(num)
