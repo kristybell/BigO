@@ -1,0 +1,31 @@
+# Given (2) arrays, create a function that let's a used know (true false) whether
+# these two arrays contain any common items
+# Example:
+# array_1 = ['a', 'b', 'c', 'x']
+# array_2 = ['z', 'y', 'i']
+# should return false
+# Example 2:
+# array_1 = ['a', 'b', 'c', 'x']
+# array_2 = ['z', 'y', 'x']
+# should return true
+
+
+def containCommonItem(arr_1, arr_2):
+    i = 0
+    while i < len(arr_1):
+        j = 0
+        while j < len(arr_2):
+            if arr_1[i] == arr_2[j]:
+                print('True')
+                break
+            else:
+                j +=1
+        i +=1
+        
+    if j >= len(arr_2):
+        print('False')
+          
+
+array_1 = ['a', 'b', 'c', 'x']
+array_2 = ['z', 'y', 'x']
+containCommonItem(array_1, array_2)
